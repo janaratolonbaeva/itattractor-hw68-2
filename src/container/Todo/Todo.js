@@ -21,8 +21,6 @@ const Todo = () => {
 	const tasks = useSelector(state => state.tasksList);
 	const classes = useStyles();
 
-	console.log(tasks);
-
 	useEffect(() => {
 		dispatch(fetchPosts())
 	}, [dispatch]);
